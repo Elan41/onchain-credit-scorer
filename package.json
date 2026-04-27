@@ -3,10 +3,10 @@
   "version": "2.0.0",
   "description": "x402-paid Node 1: Credit scoring + wallet risk classification across Base and Ethereum",
   "type": "module",
-  "main": "src/src/server.js",
+  "main": "src/server.js",
   "scripts": {
-    "start": "node src/src/server.js",
-    "dev": "node --watch src/src/server.js"
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
   },
   "engines": {
     "node": ">=20.0.0"
