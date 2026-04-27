@@ -1,19 +1,31 @@
-services:
-  - type: web
-    name: onchain-credit-scorer
-    runtime: node
-    buildCommand: npm install
-    startCommand: npm start
-    envVars:
-      - key: RECEIVING_WALLET
+# Exported from Render on 2026-04-27T17:59:18Z
+version: "1"
+projects:
+- name: My project
+  environments:
+  - name: Production
+    services:
+    - type: web
+      name: onchain-credit-scorer
+      runtime: node
+      repo: https://github.com/Elan41/onchain-credit-scorer
+      plan: free
+      envVars:
+      - key: NODE_ENV
+        sync: false
+      - key: ETH_RPC_URL
+        sync: false
+      - key: BASE_RPC_URL
         sync: false
       - key: NETWORK
-        value: base-sepolia
-      - key: BASE_RPC_URL
-        value: https://mainnet.base.org
-      - key: ETH_RPC_URL
-        value: https://eth.llamarpc.com
-      - key: NODE_ENV
-        value: production
-    healthCheckPath: /health
-    autoDeploy: true
+        sync: false
+      - key: Value
+        sync: false
+      - key: Key
+        sync: false
+      region: oregon
+      buildCommand: npm install
+      startCommand: npm start
+      healthCheckPath: /health
+      autoDeployTrigger: commit
+
