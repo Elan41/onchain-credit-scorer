@@ -11,6 +11,9 @@ projects:
       repo: https://github.com/Elan41/onchain-credit-scorer
       plan: free
       envVars:
+      - key: RECEIVING_WALLET
+        value: 0x1db618e6bfc35bd48b91431a55c4948b27e7a539
+        sync: false
       - key: NODE_ENV
         sync: false
       - key: ETH_RPC_URL
